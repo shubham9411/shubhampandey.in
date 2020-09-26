@@ -23,7 +23,12 @@ const Learn = () => (
       <h2>JavaScript</h2>
       <ul className={styles.ulContainers}>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Fetch
         </li>
         <li>

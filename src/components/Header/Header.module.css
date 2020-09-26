@@ -1,8 +1,5 @@
-.ListLink {
-  padding-right: 0.5rem;
-}
-
 .Link {
+  padding: 5px;
   padding-right: 0.2rem;
   text-decoration: none;
   color: #fff;
@@ -38,6 +35,10 @@
   display: flex;
 }
 
+.hideMobile {
+  display: none;
+}
+
 /* DESKTOP RESPONSIVENESS */
 @media only screen and (min-width: 500px) {
   .Header {
@@ -52,5 +53,11 @@
     margin-right: 0;
     padding: 0.7rem 1rem;
     text-decoration: none;
+  }
+  .ListLink {
+    padding-right: 0.5rem;
+  }
+  .hideMobile {
+    display: inline;
   }
 }

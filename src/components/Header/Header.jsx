@@ -7,10 +7,9 @@ import styles from './Header.module.css'
 import Container from '../Container'
 
 const activeLinkStyle = {
-  backgroundColor: 'whitesmoke',
+  backgroundColor: '#3d57c5',
   borderRadius: 6,
-  color: '#222',
-  padding: '0.7rem 1rem',
+  color: '#eee',
 }
 
 const LinkListItem = ({ to, children }) => (
@@ -30,7 +29,10 @@ const Header = ({ title }) => (
   <header className={styles.Header}>
     <Container>
       <Link to="/">
-        <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>
+          {title.split(' ')[0]}
+          <span className={styles.hideMobile}> {title.split(' ')[1]}</span>
+        </h3>
       </Link>
 
       <ul className={styles.linkList}>
