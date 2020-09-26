@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Shubham Pandey',
-    description: 'Full Stack Developer (ROR, React)',
+    description:
+      "Full Stack Developer (ROR, React). I'm a software engineer building things on the web with HTML, CSS, JavaScript, React, and Ruby on Rails.",
     url: 'https://shubhampandey.in',
   },
   plugins: [
