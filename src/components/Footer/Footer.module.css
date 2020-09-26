@@ -1,0 +1,62 @@
+.ulContainer {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLink {
+  display: inline;
+  list-style: none;
+  margin: 0;
+}
+
+.link {
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.link:hover {
+  border-radius: 6px;
+  text-decoration: underline;
+  background-color: whitesmoke;
+}
+
+.link {
+  text-decoration: none;
+  color: #6e6e6e;
+}
+
+.link:hover {
+  color: #222;
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.instructions {
+  position: absolute;
+  font-size: 0.9rem;
+  margin-top: -2.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  footer {
+    text-align: left;
+  }
+
+  .list {
+    padding: 0;
+    margin-left: -0.3rem;
+  }
+
+  .footerLink {
+    display: inline;
+    list-style: none;
+    margin: 0 1rem 0 0;
+  }
+}

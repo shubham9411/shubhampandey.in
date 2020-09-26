@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 0 0.7rem;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #636363;
+}
+
+.headshotContainer {
+  text-align: center;
+}
+
+.headshot {
+  width: 17rem;
+  border-radius: 6px;
+}
+
+/* DESKTOP RESPONSIVENESS */
+@media only screen and (min-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutContainer {
+    max-width: 70%;
+    margin-right: 2rem;
+  }
+
+  .headshot {
+    width: 12rem;
+    margin-top: 6.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .headshot {
+    width: 15rem;
+  }
+}

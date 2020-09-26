@@ -1,0 +1,33 @@
+.LinkButton,
+.LinkButtonLarge {
+  /* background-color: buttonface; */
+  border: 1px solid #2a5aa7;
+  color: black;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.LinkButton {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0 0.3rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.LinkButtonLarge {
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.LinkButton:hover,
+.LinkButtonLarge:hover {
+  background-color: #2a5aa7;
+  border-color: #2a5aa7;
+  color: white;
+}
+
+.LinkButtonContainer {
+  text-align: center;
+}

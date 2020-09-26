@@ -1,0 +1,11 @@
+.container {
+  padding: 0 0.7rem;
+}
+
+.ulContainers {
+  list-style-type: none;
+}
+
+.taskListItem {
+  margin-right: 0.7rem;
+}

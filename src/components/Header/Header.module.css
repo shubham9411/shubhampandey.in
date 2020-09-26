@@ -1,0 +1,56 @@
+.ListLink {
+  padding-right: 0.5rem;
+}
+
+.Link {
+  padding-right: 0.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.Link:hover {
+  background-color: #3d57c5;
+  border-radius: 6px;
+  color: #eee;
+  text-decoration: underline;
+}
+
+.Header {
+  padding: 0.1rem 0;
+  margin-bottom: 2.5rem;
+  display: block;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background: #4c6df5 !important;
+}
+
+.title {
+  display: inline-block;
+  color: #fff;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.linkList {
+  list-style: none;
+  float: right;
+  display: flex;
+}
+
+/* DESKTOP RESPONSIVENESS */
+@media only screen and (min-width: 500px) {
+  .Header {
+    margin-bottom: 2rem;
+    padding-left: 0.9rem;
+  }
+  .title {
+    margin-left: 0;
+    display: inline-block;
+  }
+  .Link {
+    margin-right: 0;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+  }
+}
