@@ -9,8 +9,8 @@ const Learn = () => (
     <section className={styles.container}>
       <h1>Learning in Public</h1>
       <p>
-        My current focus is on RoR, React and data structures + algorithms for
-        interviewing. Learning in public inspired by{' '}
+        My current focus is on RoR, React and data structures + algorithms.
+        Learning in public inspired by{' '}
         <a
           href="https://www.taniarascia.com/learn/"
           target="_blank"

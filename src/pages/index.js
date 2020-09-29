@@ -10,14 +10,12 @@ const Home = () => (
       <div className={styles.aboutContainer}>
         <h1 className={styles.title}>Hi, I'm Shubham Pandey</h1>
         <p className={styles.subtitle}>
-          I'm a currently working as a Full stack developer at eLitmus. I am an
-          observer of new cults of tech twitter and follow whats happening on
-          the tech space.
+          A Software Engineer. I write code, blog posts, and musings.
         </p>
 
         <p>
-          This is a place where I dump all info of my learnings and events of my
-          life.
+          This is my corner of the web where I share things I learn. As a
+          developer I write code in Ruby on Rails and React.
         </p>
 
         <p>
