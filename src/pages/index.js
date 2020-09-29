@@ -32,13 +32,13 @@ const Home = () => (
         </p>
 
         <p>
-          You can read my <Link to="/blog">blog</Link>, or for older blogs visit{' '}
+          You can read my <Link to="/blog">blog</Link> and see some older{' '}
           <a
-            href="https://archive.shubhampandey.in/"
+            href="https://archive.shubhampandey.in/sketches/"
             rel="noreferrer noopener"
             target="_blank"
           >
-            Archive
+            sketching
           </a>
           .
         </p>

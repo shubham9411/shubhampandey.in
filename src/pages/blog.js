@@ -45,18 +45,7 @@ const Blog = ({
     <Layout>
       <div className="blogPageContainer">
         <h1 className="header">Blog</h1>
-        <p>
-          Documenting my journey of making cool thing in the web. For older
-          blogs visit{' '}
-          <a
-            href="https://archive.shubhampandey.in/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            Archive
-          </a>
-          .
-        </p>
+        <p>Documenting my journey of making cool thing in the web.</p>
         <form>
           <input
             className="input"
