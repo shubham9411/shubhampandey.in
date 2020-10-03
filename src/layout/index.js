@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import 'modern-normalize'
-import 'typeface-roboto'
 import './index.css'
 
 import SEO from '../components/SEO'
@@ -24,6 +23,19 @@ const IndexLayout = ({ children }) => (
     `}
     render={data => (
       <>
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+            type="text/css"
+          />
+        </noscript>
         <SEO />
         <Header title={data.site.siteMetadata.title} />
         <Container>
