@@ -53,7 +53,7 @@ const Home = () => {
         </div>
         <div className={styles.headshotContainer}>
           <img
-            src=""
+            src="shubham9411.webp"
             className={styles.headshot}
             alt="Photo of Shubham Pandey"
             ref={webpImage}
