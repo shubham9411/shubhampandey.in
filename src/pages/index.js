@@ -5,7 +5,7 @@ import styles from './index.module.css'
 import Layout from '../layout'
 
 const Home = () => {
-  const webpImage = useRef(null);
+  const webpImage = useRef(null)
 
   const changeImageFromWebP = () => {
     const pngUrl = 'shubham9411.png'

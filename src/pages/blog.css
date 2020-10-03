@@ -61,6 +61,9 @@
   text-align: center;
 }
 
+.token.tag {
+  background-color: transparent;
+}
 /* DESKTOP RESPONSIVENESS */
 @media only screen and (min-width: 520px) {
   .blogContainer {
@@ -78,40 +81,6 @@
   }
 }
 
-/* TAG COLORS */
-.tag-javascript {
-  background-color: #fff6d6;
-}
-
-.tag-fundamentals {
-  background-color: #e0ffe9;
-}
-
-.tag-api,
-.tag-interview,
-.tag-hacktoberfest {
-  background-color: #ffe2f7;
-  color: #c81492;
-}
-
-.tag-react,
-.tag-productivity {
-  background-color: #dce3ff;
-  color: #2543bb;
-}
-
-.tag-node {
-  background-color: #ffe7de;
-  color: #b93201;
-}
-
-.tag-deployment,
-.tag-project,
-.tag-snippets {
-  background-color: #eae3ff;
-  color: #4714ff;
-}
-
 /* CATEGORY PAGE */
 .categoryName {
   margin-top: 2rem;
@@ -125,4 +94,18 @@ blockquote {
 
 .tag-wordpress {
   background-color: #66d9ef;
+}
+
+.tag-Quote {
+  background-color: #dce3ff;
+  color: #2543bb;
+}
+
+.tag-perf {
+  background-color: #fff6d6;
+}
+
+.tag-Internship {
+  background-color: #ffe2f7;
+  color: #c81492;
 }

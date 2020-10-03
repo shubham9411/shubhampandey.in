@@ -29,3 +29,10 @@
 .linkpTag {
   margin: 1rem 0 1rem 0;
 }
+
+td img {
+  max-width: 90%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+}
