@@ -4,6 +4,7 @@ module.exports = {
     description:
       "Full Stack Developer (ROR, React). I'm a software engineer building things on the web with HTML, CSS, JavaScript, React, and Ruby on Rails.",
     url: 'https://shubhampandey.in',
+    feedUrl: 'https://shubhampandey.in/rss.xml',
   },
   plugins: [
     {
@@ -45,6 +46,64 @@ module.exports = {
               },
               escapeEntities: {},
             },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                url
+                site_url: url
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  custom_elements: [
+                    { 'content:encoded': edge.node.html },
+                    { author: 'hello@shubhampandey.in' },
+                  ],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  limit: 30,
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      frontmatter {
+                        title
+                        date
+                        path
+                        tags
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Shubham Pandey | RSS Feed',
           },
         ],
       },
