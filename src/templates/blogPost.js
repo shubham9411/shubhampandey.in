@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
@@ -13,6 +13,19 @@ const BlogTemplate = ({ data, pageContext }) => {
   const date = markdownRemark.frontmatter.date
   const html = markdownRemark.html
 
+  useEffect(() => {
+    const images = document.querySelectorAll('img')
+    setTimeout(() => {
+      ;[].slice.call(images).forEach(img => {
+        if (img.naturalWidth == 0 && img.naturalHeight == 0) {
+          const pngImage = img.src
+          const pngUrl = pngImage.replace('webp', 'png')
+          img.src = pngUrl
+        }
+      })
+    }, 3000)
+  })
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -24,6 +37,18 @@ const BlogTemplate = ({ data, pageContext }) => {
           className={styles.blogpost}
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
+        <div className="">
+          Thanks for reading if you have any comments or feedback you can reach
+          out to me on{' '}
+          <a
+            href="https://twitter.com/shubham9411"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            twitter
+          </a>
+          .
+        </div>
         <h2>Up Next</h2>
         <div className={styles.linkContainer}>
           <p className={styles.linkpTag}>
@@ -51,8 +76,10 @@ const BlogTemplate = ({ data, pageContext }) => {
 }
 
 const pageContextProps = PropTypes.shape({
-  path: PropTypes.string,
-  title: PropTypes.string,
+  frontmatter: PropTypes.shape({
+    path: PropTypes.string,
+    title: PropTypes.string,
+  }),
 })
 
 BlogTemplate.propTypes = {

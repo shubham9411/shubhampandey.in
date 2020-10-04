@@ -5,7 +5,7 @@ type: post
 date: 2017-02-09
 draft: true
 path: /fear-of-failure
-category: Quote
+category: Quotes
 tags:
   - Quote
 
