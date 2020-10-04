@@ -72,8 +72,8 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  url: site.siteMetadata.url + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.url + edge.node.frontmatter.path,
                   custom_elements: [
                     { 'content:encoded': edge.node.html },
                     { author: 'hello@shubhampandey.in' },
