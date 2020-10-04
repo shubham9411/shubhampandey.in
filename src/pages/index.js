@@ -1,16 +1,22 @@
-import React, { useRef } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
 import styles from './index.module.css'
 
 import Layout from '../layout'
 
 const Home = () => {
-  const webpImage = useRef(null)
-
-  const changeImageFromWebP = () => {
-    const pngUrl = 'shubham9411.png'
-    webpImage.current.src = pngUrl
-  }
+  useEffect(() => {
+    const images = document.querySelectorAll('img')
+    setTimeout(() => {
+      ;[].slice.call(images).forEach(img => {
+        if (img.naturalWidth == 0 && img.naturalHeight == 0) {
+          const pngImage = img.src
+          const pngUrl = pngImage.replace('webp', 'png')
+          img.src = pngUrl
+        }
+      })
+    }, 1000)
+  })
 
   return (
     <Layout>
@@ -56,8 +62,6 @@ const Home = () => {
             src="shubham9411.webp"
             className={styles.headshot}
             alt="Photo of Shubham Pandey"
-            ref={webpImage}
-            onError={changeImageFromWebP}
           />
         </div>
       </div>
