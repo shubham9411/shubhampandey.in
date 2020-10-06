@@ -1,34 +1,99 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
-import { useLocation } from '@reach/router'
-import { useStaticQuery, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
-const SEO = ({ title, description, article }) => {
-  const { pathname } = useLocation()
-  const { site } = useStaticQuery(query)
+import config from './config'
 
-  const { defaultTitle, defaultDescription, siteUrl } = site.siteMetadata
+export default function SEO({
+  postNode,
+  postPath,
+  postSEO,
+  customDescription,
+}) {
+  let title
+  let description
+  let image = config.siteLogo
+  let postURL
 
-  const seo = {
-    title: title || defaultTitle,
-    description: description || defaultDescription,
-    url: `${siteUrl}${pathname}`,
+  if (postSEO) {
+    const postMeta = postNode.frontmatter
+    title = postMeta.title
+    description = postNode.excerpt
+
+    if (postMeta.thumbnail) {
+      image = postMeta.thumbnail.childImageSharp.fixed.src
+    }
+
+    postURL = `${config.siteUrl}${postPath}`
+  } else {
+    title = config.siteTitle
+    description = customDescription || postNode?.excerpt || config.description
   }
 
+  image = `${config.siteUrl}${image}`
+  const schemaOrgJSONLD = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      url: config.siteUrl,
+      name: title,
+      alternateName: title,
+    },
+  ]
+
+  if (postSEO) {
+    schemaOrgJSONLD.push(
+      {
+        '@context': 'http://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            item: {
+              '@id': postURL,
+              name: title,
+              image,
+            },
+          },
+        ],
+      },
+      {
+        '@context': 'http://schema.org',
+        '@type': 'BlogPosting',
+        url: config.siteUrl,
+        name: title,
+        alternateName: title,
+        headline: title,
+        image: {
+          '@type': 'ImageObject',
+          url: image,
+        },
+        description,
+      }
+    )
+  }
   return (
     <Helmet>
-      <title>{seo.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-      <meta name="description" content={seo.description} />
+      <meta name="description" content={description} />
+      <meta name="image" content={image} />
 
-      <meta property="og:url" content={seo.url} />
-      {article && <meta property="og:type" content="article" />}
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:description" content={seo.description} />
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgJSONLD)}
+      </script>
 
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:description" content={seo.description} />
+      <meta property="og:url" content={postSEO ? postURL : config.siteUrl} />
+      {postSEO && <meta property="og:type" content="article" />}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={image} />
+
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={config.userTwitter} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
     </Helmet>
   )
 }
@@ -44,17 +109,3 @@ SEO.defaultProps = {
   description: null,
   article: false,
 }
-
-export default SEO
-
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        defaultDescription: description
-        siteUrl: url
-      }
-    }
-  }
-`

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import styles from './blogPost.module.css'
 
 import Layout from '../layout'
+import SEO from '../components/SEO'
 
 const BlogTemplate = ({ data, pageContext }) => {
   const { next, prev } = pageContext
@@ -28,6 +29,11 @@ const BlogTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <SEO
+        postPath={markdownRemark.frontmatter?.path}
+        postNode={markdownRemark}
+        postSEO
+      />
       <div className={styles.container}>
         <h1>{title}</h1>
         <p>
@@ -104,9 +110,12 @@ export const query = graphql`
   query($pathSlug: String!) {
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
+      excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        path
+        tags
       }
     }
   }
