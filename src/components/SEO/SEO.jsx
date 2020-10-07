@@ -76,6 +76,7 @@ export default function SEO({
   }
   return (
     <Helmet>
+      <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="image" content={image} />
 
