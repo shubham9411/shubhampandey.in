@@ -116,5 +116,11 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-90186372-1`,
+      },
+    },
   ],
 }
