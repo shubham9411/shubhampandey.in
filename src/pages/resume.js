@@ -10,13 +10,13 @@ const Resume = () => (
       <h1>Resume</h1>
 
       <section>
-        <p>
+        {/* <p>
           <strong>
             <a href="/shubham-resume.pdf" target="_blank" rel="noopener">
               📄 Resume PDF
             </a>
           </strong>
-        </p>
+        </p> */}
         <p>Working on Ruby on Rails and React.</p>
         <p>
           <strong>Coding from:</strong> Ranikhet ⛰️⛰️⛰️
