@@ -5,7 +5,7 @@ type: post
 date: 2017-02-06
 path: /note-to-my-self/
 featured_image: /resources/uploads/2017/08/enthusiasm.jpg
-category: Life
+category: personal
 tags:
   - Life
 
