@@ -1,21 +1,23 @@
 import React, { useEffect } from 'react'
+import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 import styles from './index.module.css'
 
 import Layout from '../layout'
 
-const Home = () => {
+const Home = ({ data }) => {
   useEffect(() => {
-    const images = document.querySelectorAll('img')
-    setTimeout(() => {
-      ;[].slice.call(images).forEach(img => {
-        if (img.naturalWidth == 0 && img.naturalHeight == 0) {
-          const pngImage = img.src
-          const pngUrl = pngImage.replace('webp', 'png')
-          img.src = pngUrl
-        }
-      })
-    }, 1000)
+    // const images = document.querySelectorAll('img')
+    // setTimeout(() => {
+    //   ;[].slice.call(images).forEach(img => {
+    //     if (img.naturalWidth == 0 && img.naturalHeight == 0) {
+    //       const pngImage = img.src
+    //       const pngUrl = pngImage.replace('webp', 'png')
+    //       img.src = pngUrl
+    //     }
+    //   })
+    // }, 1000)
   })
 
   return (
@@ -58,9 +60,10 @@ const Home = () => {
           </p>
         </div>
         <div className={styles.headshotContainer}>
-          <img
-            src="shubham9411.webp"
+          <Img
+            // src="shubham9411.webp"
             className={styles.headshot}
+            fluid={data.headshot.childImageSharp.fluid}
             alt="Photo of Shubham Pandey"
           />
         </div>
@@ -70,3 +73,15 @@ const Home = () => {
 }
 
 export default Home
+
+export const pageQuery = graphql`
+  query {
+    headshot: file(relativePath: { eq: "shubham9411.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
