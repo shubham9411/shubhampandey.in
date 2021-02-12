@@ -20,6 +20,9 @@ const Learn = () => (
         </a>
         .
       </p>
+      <div className={styles.meme}>
+        <img alt="meme time" src="/learn-in-public.jpg" />
+      </div>
       <h2>JavaScript</h2>
       <ul className={styles.ulContainers}>
         <li>
@@ -212,35 +215,75 @@ const Learn = () => (
           Binary search
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Recursion
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Sorting
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Bubble
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Insertion
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Selection
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Merge
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Heap
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Quick
         </li>
       </ul>
@@ -311,15 +354,30 @@ const Learn = () => (
           Hash tables
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Trees (currently learning)
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Heap
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Graph
         </li>
       </ul>

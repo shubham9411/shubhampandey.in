@@ -9,3 +9,14 @@
 .taskListItem {
   margin-right: 0.7rem;
 }
+
+.meme {
+  text-align: center;
+}
+.meme img {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 6px 6px 11px 4px #999;
+}
