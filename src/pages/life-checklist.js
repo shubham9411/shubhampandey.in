@@ -90,14 +90,40 @@ const LifeCheckList = () => {
     )
   }
 
+  const countTotalChecked = () => {
+    return Object.values(checklist).reduce((op, inp) => op + inp, 0)
+  }
+
   return (
     <Layout>
       <section className={styles.container}>
-        <header className={styles.centerBlock}>
-          <h1>Life Checklist</h1>
-        </header>
+        <h1>Life Checklist</h1>
+        <p>
+          Inspired and copied from{' '}
+          <a
+            href="https://neal.fun/life-checklist/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Neal.fun
+          </a>{' '}
+          Go make your own.
+        </p>
         <br />
         <div className={styles.contentBlock}>{renderChecklist()}</div>
+        <br />
+        <div>
+          <progress
+            value={countTotalChecked()}
+            max={Object.keys(checklist).length}
+          >
+            {countTotalChecked()} / {Object.keys(checklist).length}
+          </progress>
+          <h3 className={styles.center}>
+            Completed {countTotalChecked()} / {Object.keys(checklist).length}{' '}
+            items
+          </h3>
+        </div>
       </section>
     </Layout>
   )

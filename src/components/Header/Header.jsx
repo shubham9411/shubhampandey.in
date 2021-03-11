@@ -36,11 +36,8 @@ const Header = ({ title }) => (
       </Link>
 
       <ul className={styles.linkList}>
-        <LinkListItem to="/learn">
-          <span className={styles.linkContent}>Learn</span>
-        </LinkListItem>
-        <LinkListItem to="/resume">
-          <span className={styles.linkContent}>Resume</span>
+        <LinkListItem to="/about">
+          <span className={styles.linkContent}>About</span>
         </LinkListItem>
         <LinkListItem to="/blog">
           <span className={styles.linkContent}>Blog</span>

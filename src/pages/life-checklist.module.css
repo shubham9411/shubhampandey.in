@@ -1,28 +1,46 @@
 .center-block {
-    text-align: center;
-    height: 4em;
-    background: lightgoldenrodyellow;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  text-align: center;
+  height: 4em;
+  background: lightgoldenrodyellow;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .content-block {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 7px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
 }
 
 .checklist-item {
-    padding: 30px 20px;
-    background: lightgoldenrodyellow;
-    color: black;
-    font-size: 18px;
-    display: flex;
-    align-content: center;
-    cursor: pointer;
+  padding: 30px 20px;
+  background: lightgoldenrodyellow;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  align-content: center;
+  cursor: pointer;
 }
 .checklist-item-active {
-    background: rgb(46, 204, 113);
-    color: white;
+  background: rgb(46, 204, 113);
+  color: white;
+}
+
+progress {
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+}
+progress::-webkit-progress-bar {
+  background-color: rgb(241, 242, 246);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: rgb(46, 204, 113);
+  border-radius: 5px;
+}
+
+.center {
+    text-align: center;
 }
