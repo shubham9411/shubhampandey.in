@@ -1,0 +1,28 @@
+.center-block {
+    text-align: center;
+    height: 4em;
+    background: lightgoldenrodyellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.checklist-item {
+    padding: 30px 20px;
+    background: lightgoldenrodyellow;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+.checklist-item-active {
+    background: rgb(46, 204, 113);
+    color: white;
+}
