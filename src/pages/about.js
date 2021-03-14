@@ -4,23 +4,12 @@ import { Link } from 'gatsby'
 import styles from './about.module.css'
 
 import Layout from '../layout'
+import AboutMe from './aboutMe'
 
 const About = () => (
   <Layout>
     <section className={styles.container}>
-      <header className={styles.centerBlock}>
-        <h1>About me</h1>
-      </header>
-      <div>
-        <h1 className={styles.title}>Hi, I'm Shubham Pandey</h1>
-        <p className={styles.subtitle}>
-          A Software Engineer. I write code, blog posts, and musings.
-        </p>
-        <p>
-          This is my corner of the web where I share things I learn. As a
-          developer I write code in Ruby on Rails and React.
-        </p>
-      </div>
+      <AboutMe />
     </section>
     <br />
     <section className={styles.container}>
@@ -113,6 +102,16 @@ const About = () => (
           <Link to="/resume" className={styles.links}>
             Resume
           </Link>
+        </li>
+        <li>
+          <a
+            href="https://shubham9411.github.io/body-pix-tutorial/index4.html"
+            className={styles.links}
+            target="_blank"
+            rel="noreferrer"
+          >
+            BodyPix Example
+          </a>
         </li>
         <li>
           <a
