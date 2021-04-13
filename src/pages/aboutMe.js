@@ -57,7 +57,7 @@ export default function AboutMe() {
         </div>
         <div className={styles.headshotContainer}>
           <img
-            src="shubham9411.webp"
+            src="/shubham9411.webp"
             className={styles.headshot}
             alt="Photo of Shubham Pandey"
           />
