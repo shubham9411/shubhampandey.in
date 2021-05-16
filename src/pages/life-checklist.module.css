@@ -13,6 +13,12 @@
   gap: 7px;
 }
 
+@media screen and (max-width: 600px) {
+  .content-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .checklist-item {
   padding: 30px 20px;
   background: lightgoldenrodyellow;

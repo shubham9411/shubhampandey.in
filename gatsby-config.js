@@ -117,6 +117,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sketches`,
+        path: `${__dirname}/static/sketches`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: `UA-90186372-1`,

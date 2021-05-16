@@ -33,25 +33,17 @@ export default function AboutMe() {
           <p>
             When I'm not coding, you'll find me playing COC(mobile game), doing
             some{' '}
-            <a
-              href="https://archive.shubhampandey.in/sketches/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
+            <Link to="/sketches/" className={styles.links}>
               sketching
-            </a>{' '}
+            </Link>{' '}
             or painting.
           </p>
 
           <p>
             You can read my <Link to="/blog">blog</Link> and see some older{' '}
-            <a
-              href="https://archive.shubhampandey.in/sketches/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
+            <Link to="/sketches/" className={styles.links}>
               sketching
-            </a>
+            </Link>
             .
           </p>
         </div>

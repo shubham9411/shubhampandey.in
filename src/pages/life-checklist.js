@@ -25,7 +25,7 @@ const checklist = {
   '🏕️ Go camping': true,
   '🎢 Ride a rollercoaster': false,
   '🎻 Play an instrument': false,
-  '💋 Get kissed': false,
+  '💸 Invest Money': true,
   '💳 Get a credit card': true,
   '🚘 Start driving': false,
   '🗺️ Go on a roadtrip': true,

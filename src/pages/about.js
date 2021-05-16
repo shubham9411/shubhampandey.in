@@ -114,14 +114,9 @@ const About = () => (
           </a>
         </li>
         <li>
-          <a
-            href="https://archive.shubhampandey.in/sketches/"
-            className={styles.links}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link to="/sketches/" className={styles.links}>
             Sketches
-          </a>
+          </Link>
         </li>
         <li>
           <a
