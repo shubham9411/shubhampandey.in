@@ -82,7 +82,7 @@ async function changeBackground() {
 
 - We got the segmentation from above code and now we can mask the parts we want from that segmentation using the Api `bodyPix.toMask`.
 - Setup background and forground color it will be applied to the image.
-- If you dont want to apply any froground or background you can pass alpha as 0, ex: `const red = {r: 255, g: 0, b: 0, a: 255}` rgb -> red, blue, green, and a is for the alpha channel.
+- If you dont want to apply any forground or background you can pass alpha as 0, ex: `const red = {r: 255, g: 0, b: 0, a: 255}` rgb -> red, blue, green, and a is for the alpha channel.
 - Now draw the mask to the canvas using `bodyPix.drawMask` Api.
 
 ```javascript
