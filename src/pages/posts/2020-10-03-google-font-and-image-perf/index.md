@@ -5,6 +5,7 @@ type: post
 date: 2020-10-03
 path: /google-font-and-image-perf/
 category: web-performance
+thumbnail: /google-font-and-image-perf/pagespeed-old.png
 tags:
   - perf
   - webP

@@ -5,6 +5,7 @@ type: post
 date: 2021-05-16
 path: /removing-background-in-realtime/
 category: tensorflow
+thumbnail: /removing-background-in-realtime/internalResolution.png
 tags:
   - tensorflow
 ---

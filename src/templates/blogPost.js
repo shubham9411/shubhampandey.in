@@ -95,6 +95,7 @@ BlogTemplate.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         date: PropTypes.string,
+        path: PropTypes.string,
       }),
     }),
   }),
@@ -116,6 +117,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         tags
+        thumbnail
       }
     }
   }

@@ -22,7 +22,7 @@ export default function SEO({
     description = postNode.excerpt
 
     if (postMeta.thumbnail) {
-      image = postMeta.thumbnail.childImageSharp.fixed.src
+      image = postMeta.thumbnail
     }
 
     postURL = `${config.siteUrl}${postPath}`

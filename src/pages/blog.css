@@ -109,3 +109,8 @@ blockquote {
   background-color: #ffe2f7;
   color: #c81492;
 }
+
+.tag-tensorflow {
+  background-color: #f1b93a;
+  color: #de592b;
+}
