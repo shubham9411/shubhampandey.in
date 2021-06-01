@@ -15,7 +15,7 @@ This blog was in the backlog for a long time as this experiment was done last ye
 
 ### Backstory
 
-Last year when everyone has to go remote the demands for video conferencing/meeting software demands significantly.
+Last year when everyone had to go remote the demands for video conferencing/meeting software demands significantly.
 The most famous softwares were Zoom, Google meet, Microsoft teams. We were using google meet at elitmus at that time.
 Some of the features that are there today were not there at that time. One of the feature that was not available at that time was the background
 change for videos.
