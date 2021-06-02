@@ -16,14 +16,13 @@ This blog was in the backlog for a long time as this experiment was done last ye
 
 ### Backstory
 
-Last year when everyone had to go remote the demands for video conferencing/meeting software demands significantly.
-The most famous softwares were Zoom, Google meet, Microsoft teams. We were using google meet at elitmus at that time.
-Some of the features that are there today were not there at that time. One of the feature that was not available at that time was the background
-change for videos.
-I had worked on google meet meeting recording extension earlier that month so another thought came into my mind, What if we could change the background of any live video of ours in google meet that extension will be an instant hit if worked decently. So I started searching for such modules that can help me in achieving this feat.
+Last year when everyone had to go remote the demand for video conferencing/meeting software increased significantly.
+The most famous softwares were Zoom, Google Meet, Microsoft Teams. We were using Google Meet at eLitmus at that time.
+Some of the features available today were not there at that time. One feature not available then was changing the background for videos.
+I had worked on Google Meet meeting recording extension earlier that month so another thought struck my mind - What if we could change the background of any live video of ours in Google Meet. That extension will be an instant hit if worked decently. So I started searching for such modules that could have helped me achieve this feat.
 
-I learned about an ML model called [Bodypix](https://github.com/tensorflow/tfjs-models/tree/master/body-pix) which you can use in the browser using the TensorFlow library. So I began doing some experiments with the library. Of course, it was not that efficient as google's background blur feature but it was something. In the end, I was able to remove the background for real-time video in the browser but before starting the extension part google released the background blur so I stopped working on it.
-Here are the steps on how I achieved removing the background of real-time videos in the browser.
+I learned about an ML model called [Bodypix](https://github.com/tensorflow/tfjs-models/tree/master/body-pix), which you can use in the browser using the TensorFlow library. So I began doing some experiments with it. Of course, it was not that efficient as Google's background blur feature but it was something. In the end, I was able to remove the background for real-time video in the browser but before I could start the extension part, google released the background blur so I stopped working on it.
+I now present the steps for removing the background from videos in real-time in a browser.
 
 ---
 
