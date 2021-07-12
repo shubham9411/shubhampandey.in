@@ -35,24 +35,50 @@ const Learn = () => (
           Fetch
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Promises, async/await
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Scope
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           closures, this
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           ES6+
         </li>
       </ul>
 
-      <h2>React</h2>
+      <h2>
+        React{' '}
+        <small style={{ color: '#999', fontSize: '0.5em' }}>
+          {' '}
+          Current focus
+        </small>
+      </h2>
       <ul className={styles.ulContainers}>
         <li>
           <input
@@ -109,20 +135,44 @@ const Learn = () => (
           React Router
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Context
         </li>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
           Redux
         </li>
       </ul>
 
-      <h2>Testing</h2>
+      <h2>Designing & Testing</h2>
       <ul className={styles.ulContainers}>
         <li>
-          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
-          JavaScript Unit Tests
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
+          React testing library
+        </li>
+        <li>
+          <input
+            className={styles.taskListItem}
+            checked
+            type="checkbox"
+            disabled
+          />{' '}
+          Storybook
         </li>
       </ul>
 
@@ -360,7 +410,7 @@ const Learn = () => (
             type="checkbox"
             disabled
           />{' '}
-          Trees (currently learning)
+          Trees
         </li>
         <li>
           <input
@@ -379,6 +429,18 @@ const Learn = () => (
             disabled
           />{' '}
           Graph
+        </li>
+        <li>
+          <input className={styles.taskListItem} type="checkbox" disabled /> Cut
+          Vortax
+        </li>
+        <li>
+          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          Union FInd
+        </li>
+        <li>
+          <input className={styles.taskListItem} type="checkbox" disabled />{' '}
+          Articulation points Algos
         </li>
       </ul>
     </section>
