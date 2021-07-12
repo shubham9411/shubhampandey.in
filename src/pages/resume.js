@@ -17,7 +17,7 @@ const Resume = () => (
             </a>
           </strong>
         </p>
-        <p>Working on Ruby on Rails and React.</p>
+        <p>Working as a Frontend Engineer</p>
         <p>
           <strong>Coding from:</strong> Ranikhet ⛰️⛰️⛰️
         </p>
@@ -25,9 +25,13 @@ const Resume = () => (
       <section>
         <h2>Experience</h2>
         <h3>
+          <i>mFine - Novocura Tech Health Services</i> at Bangalore
+        </h3>
+        <p>Mar 2021 - Present</p>
+        <h3>
           <i>eLitmus evaluation pvt ltd</i> at Bangalore
         </h3>
-        <p>July 2018 - Present</p>
+        <p>July 2018 - Jan 2021</p>
       </section>
       <section>
         <h2>Education</h2>
