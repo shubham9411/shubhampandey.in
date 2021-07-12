@@ -55,6 +55,16 @@ const About = () => (
             FlexBox Froggy - Hindi Translation
           </a>
         </li>
+        <li>
+          <a
+            href="https://github.com/shubham9411"
+            className={styles.links}
+            target="_blank"
+            rel="noreferrer"
+          >
+            and many more...
+          </a>
+        </li>
       </ul>
     </section>
     <br />

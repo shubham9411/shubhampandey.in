@@ -31,8 +31,15 @@ export default function AboutMe() {
           </p>
 
           <p>
-            When I'm not coding, you'll find me playing COC(mobile game), doing
-            some{' '}
+            When I'm not coding, you'll find me reading a{' '}
+            <a
+              href="#"
+              className={styles.links}
+              title="currently reading Psychology of money and Ikigai"
+            >
+              book
+            </a>
+            , doing some{' '}
             <Link to="/sketches/" className={styles.links}>
               sketching
             </Link>{' '}
