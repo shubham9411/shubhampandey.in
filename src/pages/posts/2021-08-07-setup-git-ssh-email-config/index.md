@@ -10,13 +10,13 @@ tags:
   - ssh
 ---
 
-Recently one of my PR got merged in react core. I was so happy to see it merged and I put a screenshot and shared on social media. I was happy that my name is now going to show up in the contributers section in the github of [`facebook/react`](https://github.com/facebook/react/pulls?q=author%3Ashubham9411) but here is the twist it wasn't. Normally the name shows up in github if you have even one single PR then why wasn't my name was on that list. I had configured the SSH correctly for work and private github than why it happened. This got me things. So I had to go back and figure out how github actually shows the contribution chart. 
+Recently one of my PR got merged in react core. I was so happy to see it merged and I put a screenshot and shared it on social media. I was happy that my name is now going to show up in the contributor's section in the GitHub of [`facebook/react`](https://github.com/facebook/react/pulls?q=author%3Ashubham9411) but here is the twist it wasn't. Normally the name shows up in GitHub if you have even one single PR then why wasn't my name was on that list. I had configured the SSH correctly for work and private GitHub than why it happened. This got me things. So I had to go back and figure out how GitHub shows the contribution chart. 
 
-When you first install the git in your system you have to provide two values to the local git your name and your commit email. ANd then when you commit anything in any git repository it associates those two values in the commit. So when I setup the git first time in the current system it was my work email 😑. So all of the commits I did from last 6 months were signed by my work email. And I thought I knew enough git to be dangerous. 
+When you first install the git in your system you have to provide two values to the local git your name and your commit email. And then when you commit anything in any git repository it associates those two values in the commit. So when I set up the git first time in the current system it was my work email 😑. So all of the commits I did from the last 6 months were signed by my work email. And I thought I knew enough git to be dangerous. 
 
-The very next thing I did was to search if we can use multiple two different emails for different projects. One solutions was to setup email for every folder which is not practical if you clone git repos every now and then. I needed a global workflow that can distinguish email used on basis of folders. I had already segregrated folders for work and private so that would have been an easier solution. 
+The very next thing I did was to search if we can use multiple two different emails for different projects. One solution was to setup an email for every folder which is not practical if you clone git repos now and then. I needed a global workflow that can distinguish email used on basis of folders. I had already segregated folders for work and private so that would have been an easier solution. 
 
-I found a solution for this problem. [`Conditional Configuration`](https://github.blog/2017-05-10-git-2-13-has-been-released/) it was released to git back in 2017. So for future me I am writing this blog to what all the configuration I need when setting up git in a new machine.
+I found a solution to this problem. [`Conditional Configuration`](https://github.blog/2017-05-10-git-2-13-has-been-released/) was released to git back in 2017. So for future me, I am writing this blog to what all the configurations I need when setting up git in a new machine. 
 
 ### Setting up SSH
 
@@ -39,7 +39,7 @@ I found a solution for this problem. [`Conditional Configuration`](https://githu
       UseKeychain yes
       IdentityFile ~/.ssh/workkey
   ```
-5. Now add the keys to their respective git providers github, bitbucket etc.
+5. Now add the keys to their respective git providers GitHub, bitbucket etc.
 
 ### Setting up different git config based on Folder
 
@@ -61,4 +61,4 @@ I found a solution for this problem. [`Conditional Configuration`](https://githu
       name = Shubham pandey
   ```
 
-That's it. Now you have configured two different email for two different folders, now I can commit in peace. Hopefully my next PR to react comes sooner. 
+That's it. Now you have configured two different emails for two different folders, now I can commit in peace. Hopefully, my next PR to react comes sooner. 
