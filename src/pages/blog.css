@@ -114,3 +114,13 @@ blockquote {
   background-color: #f1b93a;
   color: #de592b;
 }
+
+.tag-git {
+  background-color: #e84f31;
+  color: #fff;
+}
+
+.tag-ssh {
+  background-color: #f7f7f7;
+  color: #42a5f5;
+}
