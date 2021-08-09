@@ -18,11 +18,11 @@ I had to go back and figure out how GitHub shows the contribution chart.
 
 My findings:
 
-When you first install the git in your system, you have to provide two values to the local git - your name and your commit email. Then, when you commit anything in any git repository, it associates those two values with the commit. So, when I set up the git first time in the current system it was my work email 😑. This meant all of the commits I did during the last six months were signed by my work email. And I thought I knew enough git to be dangerous!
+1. When you first install the git in your system, you have to provide two values to the local git - your name and your commit email. Then, when you commit anything in any git repository, it associates those two values with the commit. So, when I set up the git first time in the current system it was my work email. This meant all of the commits I did during the last six months were signed by my work email. And I thought I knew enough git to be dangerous!
 
-Next thing I did was to search if we can use different emails for different projects. One solution was to setup an email for every folder, which is not practical if you clone git repos every now and then. Instead, I needed a generic workflow that could help me use different emails for different folders. I had already segregated folders for work and private so that would have been a more natural solution for the way I organize git repos in my system. 
+2. Next thing I did was to search if we can use different emails for different projects. One solution was to setup an email for every folder, which is not practical if you clone git repos every now and then. Instead, I needed a generic workflow that could help me use different emails for different folders. I had already segregated folders for work and private so that would have been a more natural solution for the way I organize git repos in my system. 
 
-I have found a solution to this problem. [`Conditional Configuration`](https://github.blog/2017-05-10-git-2-13-has-been-released/) was released to git back in 2017. For future me, I am writing this blog  listing all the configurations I need when setting up git in a new machine. 
+3. I have found a solution to this problem. [`Conditional Configuration`](https://github.blog/2017-05-10-git-2-13-has-been-released/) was released to git back in 2017. For future me, I am writing this blog  listing all the configurations I need when setting up git in a new machine. 
 
 ### Setting up SSH
 
