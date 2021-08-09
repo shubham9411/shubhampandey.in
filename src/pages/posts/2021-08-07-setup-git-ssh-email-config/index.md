@@ -10,18 +10,23 @@ tags:
   - ssh
 ---
 
-Recently one of my PR got merged in react core. I was so happy to see it merged and I put a screenshot and shared it on social media. I was happy that my name is now going to show up in the contributor's section in the GitHub of [`facebook/react`](https://github.com/facebook/react/pulls?q=author%3Ashubham9411) but here is the twist it wasn't. Normally the name shows up in GitHub if you have even one single PR then why wasn't my name was on that list. I had configured the SSH correctly for work and private GitHub than why it happened. This got me things. So I had to go back and figure out how GitHub shows the contribution chart. 
+Recently, one of my PR got merged in React Core. I was over the moon to see it merged and I took a screenshot and shared it on social media. I was quite happy thinking my name would now show up in the contributors’ section in the GitHub repository of [`facebook/react`](https://github.com/facebook/react/pulls?q=author%3Ashubham9411). But here is the twist - it was not! 
 
-When you first install the git in your system you have to provide two values to the local git your name and your commit email. And then when you commit anything in any git repository it associates those two values in the commit. So when I set up the git first time in the current system it was my work email 😑. So all of the commits I did from the last 6 months were signed by my work email. And I thought I knew enough git to be dangerous. 
+Normally the name shows up in GitHub if you have even one single PR. It got me thinking why wasn't my name on that list. I had configured the SSH correctly for work and private GitHub;  then why  would this happen?
 
-The very next thing I did was to search if we can use multiple two different emails for different projects. One solution was to setup an email for every folder which is not practical if you clone git repos now and then. I needed a global workflow that can distinguish email used on basis of folders. I had already segregated folders for work and private so that would have been an easier solution. 
+I had to go back and figure out how GitHub shows the contribution chart. 
 
-I found a solution to this problem. [`Conditional Configuration`](https://github.blog/2017-05-10-git-2-13-has-been-released/) was released to git back in 2017. So for future me, I am writing this blog to what all the configurations I need when setting up git in a new machine. 
+My findings:
+
+When you first install the git in your system, you have to provide two values to the local git - your name and your commit email. Then, when you commit anything in any git repository, it associates those two values with the commit. So, when I set up the git first time in the current system it was my work email 😑. This meant all of the commits I did during the last six months were signed by my work email. And I thought I knew enough git to be dangerous!
+
+Next thing I did was to search if we can use different emails for different projects. One solution was to setup an email for every folder, which is not practical if you clone git repos every now and then. Instead, I needed a generic workflow that could help me use different emails for different folders. I had already segregated folders for work and private so that would have been a more natural solution for the way I organize git repos in my system. 
+
+I have found a solution to this problem. [`Conditional Configuration`](https://github.blog/2017-05-10-git-2-13-has-been-released/) was released to git back in 2017. For future me, I am writing this blog  listing all the configurations I need when setting up git in a new machine. 
 
 ### Setting up SSH
 
 1. Create a key from terminal
-
   ```bash
   ssh-keygen -t ed25519 -C "me@shubhampandey.in"
   ```
