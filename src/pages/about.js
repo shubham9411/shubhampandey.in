@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import styles from './about.module.css'
+import * as styles from './about.module.css'
 
 import Layout from '../layout'
 import AboutMe from './aboutMe'

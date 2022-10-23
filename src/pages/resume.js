@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../layout'
 
-import styles from './resume.module.css'
+import * as styles from './resume.module.css'
 
 const Resume = () => (
   <Layout>

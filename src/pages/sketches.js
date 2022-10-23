@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../layout'
 
-import styles from './sketches.module.css'
+import * as styles from './sketches.module.css'
 
 // eslint-disable-next-line react/prop-types
 const Sketches = ({ data }) => {

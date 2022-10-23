@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
-import styles from './index.module.css'
+import * as styles from './index.module.css'
 
 export default function AboutMe() {
   useEffect(() => {

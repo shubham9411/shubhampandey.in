@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './learn.module.css'
+import * as styles from './learn.module.css'
 
 import Layout from '../layout'
 

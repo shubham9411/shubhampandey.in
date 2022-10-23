@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './life-checklist.module.css'
+import * as styles from './life-checklist.module.css'
 import Layout from '../layout'
 
 const checklist = {
@@ -97,7 +97,7 @@ const LifeCheckList = () => {
 
   return (
     <Layout>
-      <section className={styles.container}>
+      <section>
         <h1>Life Checklist</h1>
         <p>
           Inspired and copied from{' '}

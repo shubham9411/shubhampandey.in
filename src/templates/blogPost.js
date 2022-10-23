@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import styles from './blogPost.module.css'
+import * as styles from './blogPost.module.css'
 
 import Layout from '../layout'
 import SEO from '../components/SEO'

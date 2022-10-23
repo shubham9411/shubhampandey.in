@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './LinkButton.module.css'
+import * as styles from './LinkButton.module.css'
 
 const Link = ({ size, href, target, className, children }) => (
   <a
