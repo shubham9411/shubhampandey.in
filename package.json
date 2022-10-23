@@ -22,7 +22,6 @@
     "gatsby-plugin-feed": "^4.24.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-gtag": "^1.0.13",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-remark-images": "^6.24.0",
