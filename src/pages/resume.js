@@ -17,17 +17,21 @@ const Resume = () => (
             </a>
           </strong>
         </p>
-        <p>Working as a Frontend Engineer</p>
+        <p>Working as a Software Engineer</p>
         <p>
-          <strong>Coding from:</strong> Ranikhet ⛰️⛰️⛰️
+          <strong>Coding from:</strong> Hyderabad
         </p>
       </section>
       <section>
         <h2>Experience</h2>
         <h3>
+          <i>Microsoft IDC</i> at Hyderabad
+        </h3>
+        <p>Jan 2022 - Present</p>
+        <h3>
           <i>mFine - Novocura Tech Health Services</i> at Bangalore
         </h3>
-        <p>Mar 2021 - Present</p>
+        <p>Mar 2021 - Jan 2022</p>
         <h3>
           <i>eLitmus evaluation pvt ltd</i> at Bangalore
         </h3>
