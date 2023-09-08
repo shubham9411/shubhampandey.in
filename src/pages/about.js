@@ -17,6 +17,16 @@ const About = () => (
       <ul>
         <li>
           <a
+            href="https://github.com/nodejs/node/pulls?q=author%3Ashubham9411"
+            className={styles.links}
+            target="_blank"
+            rel="noreferrer"
+          >
+            NodeJS Core
+          </a>
+        </li>
+        <li>
+          <a
             href="https://github.com/facebook/react/pulls?q=author%3Ashubham9411"
             className={styles.links}
             target="_blank"
