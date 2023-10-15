@@ -83,7 +83,7 @@ const LifeCheckList = () => {
         {Object.keys(checklist).map((key) => {
           let text = ''
           if (key.includes('Visit another country')) {
-            text = checklist['visited'].join(', ')
+            text = checklist[key]['visited'].join(', ')
           }
           return (
             <div
