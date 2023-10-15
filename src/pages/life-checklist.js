@@ -103,7 +103,7 @@ const LifeCheckList = () => {
   }
 
   const countTotalChecked = () => {
-    return Object.values(checklist).reduce((op, inp) => op + inp, 0)
+    return Object.values(checklist).filter((val) => !!val).length
   }
 
   return (
