@@ -50,3 +50,12 @@ progress::-webkit-progress-value {
 .center {
     text-align: center;
 }
+
+.small-text {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 4px;
+  font-size: 0.5em;
+}

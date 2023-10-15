@@ -29,8 +29,12 @@ const checklist = {
   '💳 Get a credit card': true,
   '🚘 Start driving': true,
   '🪂 Skydiving': false,
+  '🪂 Parasailing': true,
   '🗺️ Go on a roadtrip': true,
-  '🗾 Visit another country': false,
+  '🗾 Visit another country': {
+    visited: ['Nepal'],
+    pipeline: ['Netherlands', 'Singapore', 'Japan'],
+  },
   '🎤 Give a speech': false,
   '🏫 Graduate high school': true,
   '🌐 Learn another language': true,
@@ -76,17 +80,24 @@ const LifeCheckList = () => {
   const renderChecklist = () => {
     return (
       <>
-        {Object.keys(checklist).map(key => (
-          <div
-            className={`
+        {Object.keys(checklist).map((key) => {
+          let text = ''
+          if (key.includes('Visit another country')) {
+            text = checklist['visited'].join(', ')
+          }
+          return (
+            <div
+              className={`
               ${checklist[key] ? styles.checklistItemActive : ''} 
               ${styles.checklistItem}
             `}
-            key={key}
-          >
-            {key}
-          </div>
-        ))}
+              key={key}
+            >
+              {key}
+              {text !== '' ? <span className={styles.smallText}>{text}</span> : <></>}
+            </div>
+          )
+        })}
       </>
     )
   }
@@ -111,8 +122,6 @@ const LifeCheckList = () => {
           Go make your own.
         </p>
         <br />
-        <div className={styles.contentBlock}>{renderChecklist()}</div>
-        <br />
         <div>
           <progress
             value={countTotalChecked()}
@@ -125,6 +134,8 @@ const LifeCheckList = () => {
             items
           </h3>
         </div>
+        <br />
+        <div className={styles.contentBlock}>{renderChecklist()}</div>
       </section>
     </Layout>
   )
