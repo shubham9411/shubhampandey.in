@@ -29,7 +29,9 @@ const checklist = {
   '💳 Get a credit card': true,
   '🚘 Start driving': true,
   '🪂 Skydiving': false,
+  '🚀 Rocket Launch at SHAR': true,
   '🪂 Parasailing': true,
+  '🚀 Rocket Launch SpaceX': false,
   '🗺️ Go on a roadtrip': true,
   '🗾 Visit another country': {
     visited: ['Nepal'],
