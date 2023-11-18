@@ -6,7 +6,7 @@ export default function AboutMe() {
   useEffect(() => {
     const images = document.querySelectorAll('img')
     setTimeout(() => {
-      ;[].slice.call(images).forEach(img => {
+      ;[].slice.call(images).forEach((img) => {
         if (img.naturalWidth == 0 && img.naturalHeight == 0) {
           const jpgImage = img.src
           const jpgUrl = jpgImage.replace('webp', 'jpg')
