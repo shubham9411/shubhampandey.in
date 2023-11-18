@@ -8,9 +8,9 @@ export default function AboutMe() {
     setTimeout(() => {
       ;[].slice.call(images).forEach(img => {
         if (img.naturalWidth == 0 && img.naturalHeight == 0) {
-          const pngImage = img.src
-          const pngUrl = pngImage.replace('webp', 'png')
-          img.src = pngUrl
+          const jpgImage = img.src
+          const jpgUrl = jpgImage.replace('webp', 'jpg')
+          img.src = jpgUrl
         }
       })
     }, 1000)
@@ -27,7 +27,7 @@ export default function AboutMe() {
 
           <p>
             This is my corner of the web where I share things I learn. As a
-            developer I write code in Ruby on Rails and React.
+            developer I write code in Typescript, React and C#.
           </p>
 
           <p>
